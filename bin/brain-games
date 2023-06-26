@@ -1,2 +1,10 @@
 #!/usr/bin/env php
-Welcome to the Brain Games!
+<?php
+$autoloadPath1 = __DIR__ . '/../../../autoload.php';
+$autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
+
+use function Cli\greeting;
+function welcome($name)
+{
+  return greeting($name);
+}
