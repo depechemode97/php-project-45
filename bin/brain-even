@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+$name = "";
+
+require_once __DIR__ . '/brain-games';
+require_once __DIR__ . '/../src/Game.php';
+use function BrainGames\Game\isEven;
+
+isEven($name);

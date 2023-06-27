@@ -9,10 +9,13 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
+
+
 use function cli\line;
 use function cli\prompt;
 
-function greeting()
+
+function greeting(&$name)
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
