@@ -3,7 +3,7 @@
 $name = "";
 
 require_once __DIR__ . '/brain-games';
-require_once __DIR__ . '/../src/Game.php';
-use function BrainGames\Game\isEven;
+require_once __DIR__ . '/../src/Even.php';
+use function BrainGames\Even\isEven;
 
 isEven($name);

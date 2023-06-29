@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+$name = "";
+
+require_once __DIR__ . '/brain-games';
+require_once __DIR__ . '/../src/Engine.php';
+use function BrainGames\Engine\calculate;
+calculate($name);
