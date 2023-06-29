@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+$name = "";
+
+require_once __DIR__ . '/brain-games';
+require_once __DIR__ . '/../src/Gcd.php';
+use function BrainGames\Gcd\findGcd;
+
+findGcd($name);
