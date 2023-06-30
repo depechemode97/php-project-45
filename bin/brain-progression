@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+$name = "";
+
+require_once __DIR__ . '/brain-games';
+require_once __DIR__ . '/../src/Progression.php';
+use function BrainGames\Progression\progression;
+
+progression($name);

@@ -25,14 +25,14 @@ function isEven($name)
         $correctAnswer = $number % 2 === 0 ? 'yes' : 'no';
         $userAnswer = prompt('Your answer ');
         if ($userAnswer === $correctAnswer) {
-            echo "Correct!\n";
+            line("Correct!");
             $correctAnswersCount++;
         } else {
-            echo "{$userAnswer} is wrong answer ;(. Correct answer was {$correctAnswer}\n";
-            echo "Let's try again, {$name}!\n";
+            line("{$userAnswer} is wrong answer ;(. Correct answer was {$correctAnswer}");
+            line( "Let's try again, {$name}!");
             return;
         }
     }
-    echo "Congratulations, {$name}!\n";
+    line( "Congratulations, {$name}!");
 
 }

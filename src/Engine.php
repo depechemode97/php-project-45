@@ -29,7 +29,6 @@ function calculate($name)
             case '+':
                 $result = $numberOne + $numberTwo;
                 break;
-
             case '*':
                 $result = $numberOne * $numberTwo;
                 break;
@@ -39,13 +38,14 @@ function calculate($name)
         }
         $userAnswer = prompt('Your answer');
         if ($userAnswer == $result) {
-            echo "Correct!\n";
+            line("Correct!");
             $correctAnswersCount++;
         } else {
-            echo "{$userAnswer} is wrong answer ;(. Correct answer was {$result}. Let's try again, {$name}!\n";
+            line("{$userAnswer} is wrong answer ;(. Correct answer was {$result}."); 
+            line("Let's try again, {$name}!");
             return;
         }
 
     }
-    echo "Congratulations, {$name}!\n";
+    line("Congratulations, {$name}!");
 }

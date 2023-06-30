@@ -35,12 +35,12 @@ function findGcd($name)
         $result = gcd($firstNum, $secondNum);
         $userAnswer = prompt("Your answer");
         if ($userAnswer == $result) {
-            echo "Correct!\n";
+            line("Correct!");
             $correctAnswersCount++;
         } else {
-            echo "{$userAnswer} is wrong aswer :( Correct answer was {$result}.  Let's try again, {$name}!\n";
+            line("{$userAnswer} is wrong aswer :( Correct answer was {$result}.  Let's try again, {$name}!");
             return;
         }
     }
-    echo "Congratulations, {$name}!\n";
+    line("Congratulations, {$name}!");
 }
