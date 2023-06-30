@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+$name = "";
+
+require_once __DIR__ . '/brain-games';
+require_once __DIR__ . '/../src/Prime.php';
+use function BrainGames\Prime\isPrime;
+
+isPrime($name);
